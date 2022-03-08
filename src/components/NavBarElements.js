@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
-export const Container = styled.div``
+export const MenuContainer = styled.div``
 
-export const Wrapper = styled.div``
+export const MenuWrapper = styled.div``
 
-export const LogoM = styled.div`
+export const MenuLogo = styled.div`
 cursor:pointer
 `
 
-export const Profile = styled.li``
+export const MenuProfile = styled.li``
 
-export const ProfileA = styled.a`
+export const MenuProfileA = styled.a`
 {
     background: #7ae800;
     color:black;
@@ -40,9 +40,9 @@ export const ProfileA = styled.a`
 
 export const Menu = styled.ul``
 
-export const MenuI = styled.li``
+export const MenuLI = styled.li``
 
-export const MenuIL = styled.a`
+export const MenuA = styled.a`
 {
     width: auto;
     cursor: pointer;
