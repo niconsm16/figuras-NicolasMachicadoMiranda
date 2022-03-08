@@ -11,7 +11,17 @@ module.exports = {
     extend: {
       colors: {
         amarillo: '#ffb300',
+      },
 
+      animation: {
+        anicolor: 'anicolor 30s linear infinite',
+      },
+
+      keyframes: {
+        anicolor: {
+          '0%, 100%': { color: 'white' },
+          '50%': { color: '#ffb300' },
+        }
       },
     },
   },
