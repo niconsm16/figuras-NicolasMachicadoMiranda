@@ -48,7 +48,7 @@ export const MenuA = styled.a`
     cursor: pointer;
     justify-content: center;
     height: 100%;
-    padding: 0 1em;
+    padding: 0 .7em;
     display: flex;
     align-items: center;    
     transition: all .5s;
