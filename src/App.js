@@ -2,12 +2,13 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from "./components/ItemListContainer"
 
+const greetingWelcome = 'Aquí está el catálogo joven'
 
 function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer medida="60%" />
+      <ItemListContainer greeting={greetingWelcome} medida="60%" />
 
 
     </>
