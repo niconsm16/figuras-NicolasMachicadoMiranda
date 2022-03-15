@@ -4,14 +4,14 @@ import { FaPlusSquare, FaMinusSquare } from "react-icons/fa"
 
 const ItemCount = () => {
 
-    let [count, globalCount] = useState(0)
+    let [count, setCount] = useState(0)
 
     function sumaItem() {
-        globalCount(count++)
+        setCount(count++)
     }
 
     const restaItem = () => {
-        globalCount(count--)
+        setCount(count--)
     }
 
     return (
