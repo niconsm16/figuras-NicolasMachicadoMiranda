@@ -10,7 +10,6 @@ function App() {
     <>
       <NavBar />
       <ItemListContainer greeting={greetingWelcome} medida="60%" />
-
     </>
   );
 }
