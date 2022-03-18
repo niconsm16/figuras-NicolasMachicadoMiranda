@@ -35,13 +35,13 @@ const NavBar = () => {
                             <FaGavel style={{ paddingRight: 3, marginRight: 2 }} />
                             {Menu.Pujas}
                         </Styled.MenuA>
-                        <Styled.MenuProfile className="flex h-full items-center">
-                            <Styled.MenuProfileA>
-                                <FaUserAlt style={{ paddingRight: 3, marginRight: 2 }} />
-                                {Menu.Profile}
-                            </Styled.MenuProfileA>
-                        </Styled.MenuProfile>
                     </Styled.MenuLI>
+                    <Styled.MenuProfile className="flex h-full items-center">
+                        <Styled.MenuProfileA>
+                            <FaUserAlt style={{ paddingRight: 3, marginRight: 2 }} />
+                            {Menu.Profile}
+                        </Styled.MenuProfileA>
+                    </Styled.MenuProfile>
                 </Styled.Menu>
             </Styled.MenuWrapper>
         </Styled.MenuContainer>

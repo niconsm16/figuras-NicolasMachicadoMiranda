@@ -1,3 +1,4 @@
+import React from 'react';
 import ItemCount from './ItemCount';
 
 let centrado = {
@@ -6,7 +7,7 @@ let centrado = {
 
 let initial = 1
 let stock = 6
-const addToCart = (count) => { console.log(`${count} productos gregados`) }
+const addToCart = (count,) => { console.log(`${count} productos Agregados`) }
 
 
 const ItemListContainer = ({ greeting, medida }) => {
