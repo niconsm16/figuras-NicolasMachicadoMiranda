@@ -4,11 +4,11 @@ import { Product, Units, AddCart } from './Strings';
 
 
 
-const ItemCount = ({ stock, initial, onAdd }) => {
+const ItemCount = (props) => {
 
 
     function sumaItem() {
-        if (count === stock) { return }
+        if (count === props.stock) { return }
         else {
             setCount(count++)
             setStock(inStock--)
@@ -27,8 +27,8 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         }
     }
 
-    let [count, setCount] = useState(initial)
-    let [inStock, setStock] = useState(stock)
+    let [count, setCount] = useState(props.initial)
+    let [inStock, setStock] = useState(props.stock)
 
     let [a, b] = useState(count)
 
@@ -40,7 +40,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                 <span>{a}</span>
                 <button onClick={sumaItem} className="hover:drop-shadow-[0_0px_5px_orange] transition duration-500"><FaPlusSquare /></button>
             </div>
-            <div onClick={() => { onAdd(a) }} className="cursor-pointer w-full h-2/5 bg-black text-white text-center rounded-infboxes">{AddCart}</div>
+            <div onClick={() => { props.onAdd(a) }} className="cursor-pointer w-full h-2/5 bg-black text-white text-center rounded-infboxes">{AddCart}</div>
         </div>
     )
 

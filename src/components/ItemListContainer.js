@@ -7,7 +7,7 @@ let centrado = {
 
 let initial = 1
 let stock = 6
-const addToCart = (count,) => { console.log(`${count} productos Agregados`) }
+const addToCart = (count) => { console.log(`${count} productos Agregados`) }
 
 
 const ItemListContainer = ({ greeting, medida }) => {
