@@ -6,6 +6,8 @@ import { Product, Units, AddCart } from './Strings';
 
 const ItemCount = (props) => {
 
+    let [count, setCount] = useState(props.initial)
+    let [inStock, setStock] = useState(props.stock)
 
     function sumaItem() {
         if (count === props.stock) { return }
@@ -23,8 +25,6 @@ const ItemCount = (props) => {
         }
     }
 
-    let [count, setCount] = useState(props.initial)
-    let [inStock, setStock] = useState(props.stock)
 
     return (
         <div className="flex flex-col w-48 h-28 bg-white rounded-lg shadow-boxes font-ptsans m-auto">
