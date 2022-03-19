@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemListContainer from "./components/ItemListContainer"
-
+import { ItemListContainer } from "./components/ItemListContainer"
 
 const greetingWelcome = 'Aquí está el catálogo joven'
 
 function App() {
+
+  let [cartCount, setCartCount] = useState(0)
+
+  let valor = (cartNumber) => {
+    setCartCount(cartCount = cartNumber)
+  }
+
   return (
     <>
-      <NavBar />
-      <ItemListContainer greeting={greetingWelcome} medida="60%" />
+      <NavBar a={(cartCount)} />
+      <ItemListContainer greeting={greetingWelcome} medida="60%" devolution={valor} />
     </>
   );
 }

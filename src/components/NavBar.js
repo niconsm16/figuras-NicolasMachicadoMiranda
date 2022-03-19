@@ -4,7 +4,7 @@ import { FaStore, FaHome, FaGavel, FaGlobeAmericas, FaAngleDoubleDown, FaUserAlt
 import * as Menu from "./Strings";
 import { CartWidget } from "./CartWidget";
 
-const NavBar = () => {
+const NavBar = ({ a }) => {
     return (
         <Styled.MenuContainer className="w-full text-xl">
             <Styled.MenuWrapper className="flex w-full pl-10 h-16 bg-black top-0 text-white">
@@ -14,7 +14,7 @@ const NavBar = () => {
                 </Styled.MenuLogo>
                 <Styled.Menu className="flex w-full items-center justify-end antialised font-ptsans font-medium">
                     <Styled.MenuLI className="flex h-full items-center">
-                        <CartWidget />
+                        <CartWidget b={a} />
                         <Styled.MenuA>
                             <FaHome style={{ paddingRight: 3, marginRight: 2 }} />
                             {Menu.Home}

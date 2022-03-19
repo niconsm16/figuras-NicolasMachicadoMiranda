@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ItemCount from './ItemCount';
 
-let centrado = {
-    margin: 'auto',
-}
-
-let initial = 1
-let stock = 6
-const addToCart = (count) => { console.log(`${count} productos Agregados`) }
 
 
-const ItemListContainer = ({ greeting, medida }) => {
+export const ItemListContainer = ({ greeting, medida, devolution }) => {
+
+    let initial = 1
+    let stock = 6
+    let centrado = { margin: 'auto' }
+
+
+    let [cartNumber, setCartNumber] = useState(0) // Cantidad de valores el el carrito
+
+    const addToCart = (count) => {
+        setCartNumber(cartNumber = cartNumber + count)
+        count < 0 ? console.log(`${-count} productos eliminados`) : console.log(`${count} productos Agregados`); // Resolución al Desafío
+        console.log(`${cartNumber} productos en el Carrito`) // Carrito
+    }
+
+    useEffect(() => {
+        devolution(cartNumber)
+    }, [cartNumber, devolution])
+
+
     return (
         <>
             <ItemCount stock={stock} initial={initial} onAdd={addToCart} />
@@ -19,5 +31,3 @@ const ItemListContainer = ({ greeting, medida }) => {
         </>
     )
 }
-
-export default ItemListContainer
