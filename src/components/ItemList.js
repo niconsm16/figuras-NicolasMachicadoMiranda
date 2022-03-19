@@ -12,17 +12,18 @@ let waitDb = () => {
             productos.figures !== null ? resolve(console.log('DB con datos! ')) : reject(console.log('DB vacio'))
         }, 2000)
     })
-
-        //waitDb()
-
-        .then(() => {
-        })
-        .catch((err) => {
-            return (
-                <div>No se pudo cargar los productos: {err}</div>
-            )
-        })
 }
+waitDb()
+
+    .then(() => {
+        console.log('hola')
+    })
+    .catch((err) => {
+        return (
+            <div>No se pudo cargar los productos: {err}</div>
+        )
+    })
+
 
 
 const ItemList = () => {
