@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <NavBar a={(cartCount)} />
+      <NavBar cartCount={(cartCount)} />
       <ItemListContainer greeting={greetingWelcome} medida="60%" devolution={valor} />
     </>
   );

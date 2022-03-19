@@ -6,7 +6,8 @@ module.exports = {
     fontFamily: {
       'ptsans': ['Big Shoulders Display, cursive'],
       'bakbak': ['Bakbak One, cursive'],
-      'roboto': ['Roboto Condensed, sans-serif']
+      'roboto': ['Roboto Condensed, sans-serif'],
+      'fredoka': ['Fredoka, sans-serif']
     },
     borderRadius: {
       'supboxes': '10px 10px 0 0',
@@ -16,6 +17,9 @@ module.exports = {
       DEFAULT: '0.25rem',
       'md': '0.375rem',
       'lg': '0.5rem',
+      'xl': '0.75rem',
+      '2xl': '1rem',
+      '3xl': '1.5rem',
       'full': '9999px',
       'large': '12px',
     },
@@ -42,6 +46,7 @@ module.exports = {
       },
       boxShadow: {
         'boxes': '0 0 9px 1px #a1a1a1',
+        'superhover': '0 13px 12px 2px rgb(0 0 0 / 21%)',
       },
     },
   },
