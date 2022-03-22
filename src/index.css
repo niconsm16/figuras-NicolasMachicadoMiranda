@@ -10,3 +10,20 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(243, 243, 243, 0.533);
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}

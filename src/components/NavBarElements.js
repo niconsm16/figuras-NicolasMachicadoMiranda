@@ -11,7 +11,7 @@ cursor:pointer
 export const MenuProfile = styled.li``
 
 export const MenuProfileA = styled.a`
-{
+
     background: #7ae800;
     color:black;
     width: auto;
@@ -35,7 +35,7 @@ export const MenuProfileA = styled.a`
         align-items: center;
         position: relative;
     }
-}
+
 `
 
 export const Menu = styled.ul``
@@ -43,7 +43,7 @@ export const Menu = styled.ul``
 export const MenuLI = styled.li``
 
 export const MenuA = styled.a`
-{
+
     width: auto;
     cursor: pointer;
     justify-content: center;
@@ -65,5 +65,5 @@ export const MenuA = styled.a`
         align-items: center;
         position: relative;
     }
-}
+
 `
