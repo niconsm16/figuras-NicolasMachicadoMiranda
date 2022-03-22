@@ -17,7 +17,7 @@ export const ItemDetailContainer = ({ select }) => {
             .catch((err) => {
                 console.log('no se pudo recibir el detalle', err)
             })
-    }, [])
+    }, [select])
 
 
     try {

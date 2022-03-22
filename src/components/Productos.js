@@ -7,9 +7,9 @@ export let figures = [
         url: 'https://i0.wp.com/animejapangeek.com/wp-content/uploads/2021/07/61m87J9oCiS._AC_SL1200_.jpg',
         img: [
             'https://i0.wp.com/animejapangeek.com/wp-content/uploads/2021/07/61m87J9oCiS._AC_SL1200_.jpg',
-            'https://ae01.alicdn.com/kf/HTB1RBMELpXXXXaoXFXXq6xXFXXX0/CS-speeding-modelo-Saint-Seiya-myth-cloth-Asgard-Dios-megrez-Delta-Alberich-figura-de-acci-n.jpg',
             'https://animejapangeek.com/wp-content/uploads/2021/07/61hi-Lem2PS._AC_SL1200_.jpg',
             'https://ae01.alicdn.com/kf/HTB1b0LdLFXXXXbZaXXXq6xXFXXXL/Velocidad-CS-Saint-Seiya-de-mito-Asgard-Dios-guerrero-Megrez-Alberich-de-tela.jpg',
+            'https://www.lulu-berlu.com/upload/image/saint-seiya-myth-cloth-ex---delta-alberich-megrez-p-image-463652-grande.jpg',
         ],
         logo: 'https://static.wikia.nocookie.net/logopedia/images/c/c1/Saint_seiya_logo_by_poderheavy-d3gl8te.png',
         mark: 'Bandai',
