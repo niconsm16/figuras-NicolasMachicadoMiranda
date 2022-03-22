@@ -9,7 +9,7 @@ const Item = ({ id, img, name, details, price }) => {
             <img src={img} alt='imagebig' className="w-60 h-80 m-auto object-contain" />
             <h2 className="mt-2"><strong>{name}</strong></h2>
             <h3 className=" bg-zinc-200 py-1">{details}</h3>
-            <h2 className="font-bakbak bg-zinc-300">{price} USD</h2>
+            <h2 className="font-bakbak bg-zinc-300">{price},00 USD</h2>
         </div>
 
     )

@@ -7,7 +7,8 @@ module.exports = {
       'ptsans': ['Big Shoulders Display, cursive'],
       'bakbak': ['Bakbak One, cursive'],
       'roboto': ['Roboto Condensed, sans-serif'],
-      'fredoka': ['Fredoka, sans-serif']
+      'fredoka': ['Fredoka, sans-serif'],
+      'racing': ['Racing Sans One, cursive']
     },
     borderRadius: {
       'supboxes': '10px 10px 0 0',

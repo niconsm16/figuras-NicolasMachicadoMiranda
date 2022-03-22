@@ -39,14 +39,14 @@ export const ItemDetailContainer = ({ select }) => {
                     <div className="flex flex-col items-end w-1/4 justify-items-center text-right">
                         <img src={details[select].logo} alt='img url' className="h-16 w-full mt-2 mb-6 object-contain justify-self-end" />
                         <h2 className="font-fredoka pr-1 text-md bg-gradient-to-r from-transparent to-amarillo">{details[select].name}</h2>
-                        <h3 className="font-fredoka pr-1 text-3xl">{details[select].details}</h3>
+                        <h3 className="font-racing pr-1 text-4xl my-1">{details[select].details}</h3>
                         <h3 className="text-2xl pr-1 font-bakbak bg-gradient-to-r from-transparent to-violet-500">{details[select].price},00 USD</h3>
                         <div className="flex flex-col items-end my-2">
-                            <p>Marca: {(details[select].mark).toUpperCase()}</p>
-                            <p>Año: {details[select].year}</p>
-                            <p>Versión: {details[select].version}</p>
+                            <p><b>Marca:</b> {(details[select].mark).toUpperCase()}</p>
+                            <p><b>Año:</b> {details[select].year}</p>
+                            <p><b>Versión:</b> {details[select].version}</p>
                             <ItemCondition cond={details[select].condition}>{condition}</ItemCondition>
-                            <p>Stock: {details[select].stock} unidades</p>
+                            <p><b>Stock:</b> {details[select].stock} unidades</p>
                         </div>
                         <div className="bg-zinc-100 rounded py-2 px-3">
                             <p className="font-bold pb-1">Descripción:</p>
