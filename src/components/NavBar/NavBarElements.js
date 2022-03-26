@@ -10,7 +10,7 @@ cursor:pointer
 
 export const MenuProfile = styled.li``
 
-export const MenuProfileA = styled.a`
+export const MenuProfileA = styled.div`
 
     background: #7ae800;
     color:black;
@@ -42,7 +42,7 @@ export const Menu = styled.ul``
 
 export const MenuLI = styled.li``
 
-export const MenuA = styled.a`
+export const MenuA = styled.div`
 
     width: auto;
     cursor: pointer;

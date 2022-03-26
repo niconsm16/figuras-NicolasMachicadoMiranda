@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaPlusSquare, FaMinusSquare, FaRedoAlt, FaCartPlus } from "react-icons/fa";
-import { Product, Units } from './Strings';
+import { Product, Units } from './ItemStrings';
 
 
 const ItemCount = (props) => {

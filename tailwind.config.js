@@ -8,7 +8,8 @@ module.exports = {
       'bakbak': ['Bakbak One, cursive'],
       'roboto': ['Roboto Condensed, sans-serif'],
       'fredoka': ['Fredoka, sans-serif'],
-      'racing': ['Racing Sans One, cursive']
+      'racing': ['Racing Sans One, cursive'],
+      'guy': ['Luckiest Guy, cursive'],
     },
     borderRadius: {
       'supboxes': '10px 10px 0 0',
@@ -26,6 +27,7 @@ module.exports = {
     },
     textShadow: {
       'default': '0 2px 0 #000',
+      'fort': '0 0 6px black',
       'md': '0 2px 2px white',
       'h2': '0 0 3px #FF0000, 0 0 5px #0000FF',
       'h1': '0 0 3px rgba(0, 0, 0, .8), 0 0 5px rgba(0, 0, 0, .9)',
@@ -37,13 +39,26 @@ module.exports = {
 
       animation: {
         anicolor: 'anicolor 30s linear infinite',
+        disappear: 'disappear 2s ease-in 1',
+        appear: 'appear .5s ease-in-out 1',
       },
 
       keyframes: {
         anicolor: {
           '0%, 100%': { color: 'white' },
           '50%': { color: '#ffb300' },
-        }
+        },
+        disappear: {
+          '0%': { opacity: 1 },
+          '1%': { opacity: 1 },
+          '70%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+        appear: {
+          '0%': { opacity: 0 },
+          '70%': { opacity: 0.3 },
+          '100%': { opacity: 1 },
+        },
       },
       boxShadow: {
         'boxes': '0 0 9px 1px #a1a1a1',

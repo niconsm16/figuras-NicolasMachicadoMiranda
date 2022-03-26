@@ -1,8 +1,9 @@
 import React from "react";
 import * as Styled from "./NavBarElements";
 import { FaStore, FaHome, FaGavel, FaGlobeAmericas, FaAngleDoubleDown, FaUserAlt, FaPlus } from "react-icons/fa";
-import * as Menu from "./Strings";
-import { CartWidget } from "./CartWidget";
+import * as Menu from "./NavBarStrings";
+import { CartWidget } from "../Cart/CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = ({ cartCount }) => {
     return (
@@ -10,14 +11,14 @@ const NavBar = ({ cartCount }) => {
             <Styled.MenuWrapper className="flex w-full pl-10 h-16 bg-black top-0 text-white">
                 <Styled.MenuLogo className="flex justify-start items-center w-2/6 font-bakbak text-amarillo">
                     <FaStore className="mx-3 h-8 w-8 text-white" />
-                    {Menu.Market}
+                    <Link to="/">{Menu.Market}</Link>
                 </Styled.MenuLogo>
                 <Styled.Menu className="flex w-full items-center justify-end antialised font-ptsans font-medium">
                     <Styled.MenuLI className="flex h-full items-center">
                         <CartWidget cartCount={cartCount} />
                         <Styled.MenuA>
                             <FaHome style={{ paddingRight: 3, marginRight: 2 }} />
-                            {Menu.Home}
+                            <Link to="/">{Menu.Home}</Link>
                         </Styled.MenuA>
                         <Styled.MenuA>
                             <FaAngleDoubleDown style={{ paddingRight: 3, marginRight: 2 }} />

@@ -1,24 +1,34 @@
 import React, { useState } from 'react';
-import './App.css';
-import NavBar from './components/NavBar';
-import { ItemListContainer } from "./components/ItemListContainer"
-import { ItemDetailContainer } from './components/ItemDetail';
+import NavBar from './components/NavBar/NavBar';
+// import Home from './components/Home/Home';
+import { ItemListContainer } from "./components/Item/ItemListContainer"
+import { ItemDetailContainer } from './components/Item/ItemDetailContainer';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
-const greetingWelcome = 'Aquí está el catálogo joven'
 
 function App() {
 
   let [cartCount, setCartCount] = useState(0)
 
-  let valor = (cartNumber) => {
-    setCartCount(cartCount = cartNumber)
-  }
+  let valor = cartNumber => setCartCount(cartCount = cartNumber)
 
   return (
     <>
-      <NavBar cartCount={(cartCount)} />
-      <ItemDetailContainer select='0' />
-      <ItemListContainer greeting={greetingWelcome} medida="60%" devolution={valor} />
+
+      <BrowserRouter>
+
+        <NavBar cartCount={(cartCount)} />
+
+        <Routes>
+          {/* <Route path='/' element={<Home />} /> */}
+          <Route path='/' element={<ItemListContainer devolution={valor} />} />
+          <Route path='/item/:item' element={<ItemDetailContainer />} />
+          <Route path='/category/:category' element={<ItemDetailContainer />} />
+          <Route path='*' element={<Navigate to='/' />} />
+        </Routes>
+
+      </BrowserRouter>
+
     </>
   );
 }
