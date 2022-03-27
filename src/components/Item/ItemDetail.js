@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ItemCondition } from "./ItemDetailElements";
 import ItemCount from "./ItemCount";
 
