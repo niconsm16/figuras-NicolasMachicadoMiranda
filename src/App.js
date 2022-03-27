@@ -23,7 +23,7 @@ function App() {
           {/* <Route path='/' element={<Home />} /> */}
           <Route path='/' element={<ItemListContainer devolution={valor} />} />
           <Route path='/item/:item' element={<ItemDetailContainer />} />
-          <Route path='/category/:category' element={<ItemDetailContainer />} />
+          <Route path='/category/:category' element={<ItemListContainer devolution={valor} />} />
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
 

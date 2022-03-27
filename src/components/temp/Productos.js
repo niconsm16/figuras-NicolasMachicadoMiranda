@@ -1,9 +1,9 @@
 export let figures = [
     {
         id: 1,
-        name: 'Saint Seiya',
+        category: 'Saint Seiya',
         model: 'Myth Cloth EX',
-        details: 'Alberich Delta',
+        name: 'Alberich Delta',
         price: 219,
         url: 'https://i0.wp.com/animejapangeek.com/wp-content/uploads/2021/07/61m87J9oCiS._AC_SL1200_.jpg',
         img: [
@@ -12,7 +12,7 @@ export let figures = [
             'https://ae01.alicdn.com/kf/HTB1b0LdLFXXXXbZaXXXq6xXFXXXL/Velocidad-CS-Saint-Seiya-de-mito-Asgard-Dios-guerrero-Megrez-Alberich-de-tela.jpg',
             'https://www.lulu-berlu.com/upload/image/saint-seiya-myth-cloth-ex---delta-alberich-megrez-p-image-463652-grande.jpg',
         ],
-        logo: 'saintseiya',
+        logo: 'https://static.wikia.nocookie.net/logopedia/images/c/c1/Saint_seiya_logo_by_poderheavy-d3gl8te.png',
         mark: 'Bandai',
         year: 2022,
         version: 'Japan',
@@ -22,9 +22,9 @@ export let figures = [
     },
     {
         id: 2,
-        name: 'One Piece',
+        category: 'One Piece',
         model: 'POP DX',
-        details: 'Borsalino Kizaru',
+        name: 'Borsalino Kizaru',
         price: 300,
         url: 'https://dhdzy64m58a2i.cloudfront.net/otakusquare-com/product/MEHO825781/0.jpg',
         img: [
@@ -35,7 +35,7 @@ export let figures = [
             'https://3.bp.blogspot.com/-y269dhOMVQA/WwJ8ZUjXfZI/AAAAAAAAxe0/CFrRHTWMfBwa_JOovfzMmFTGSkAr5rsxgCKgBGAs/s1600/OFFICIAL%2BBorsalino%2BKizaru%2Bpic10.jpg',
             'https://2.bp.blogspot.com/-eQNmb0m4BIA/WwJ8ZUIRTiI/AAAAAAAAxe0/Wrz92SMgk9ktl7uj85QUqatx3xaTviEYQCKgBGAs/s1600/OFFICIAL%2BBorsalino%2BKizaru%2Bpic02.jpg',
         ],
-        logo: 'onepiece',
+        logo: 'https://freepngimg.com/thumb/one_piece/22969-5-one-piece-logo-photos.png',
         mark: 'Megahouse',
         year: 2012,
         version: 'Japan',
@@ -45,9 +45,9 @@ export let figures = [
     },
     {
         id: 3,
-        name: 'Marvel',
+        category: 'Marvel',
         model: 'Select',
-        details: 'Mephisto',
+        name: 'Mephisto',
         price: 350,
         url: 'https://i.pinimg.com/originals/21/11/df/2111df5dd341d779bca9801008987f70.jpg',
         img: [
@@ -55,7 +55,7 @@ export let figures = [
             'https://m.media-amazon.com/images/I/61uREHgnvYL._AC_SY879_.jpg',
             'https://scontent.faep14-2.fna.fbcdn.net/v/t1.6435-9/61503231_1311554445669214_7569252175499493376_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEExpjY6yEv09sAF-eYXbJEUaXz7WOVyBhRpfPtY5XIGEWqp43Q8oY1MbeVHvDtNec&_nc_ohc=xpNEpHO4QkYAX8-PUlY&_nc_ht=scontent.faep14-2.fna&oh=00_AT-f7RhDPFizjJNWmzVM5n33gzzaUX4MAS4u9BxWJDkRfg&oe=626244A0'
         ],
-        logo: 'marvel',
+        logo: 'https://www.funkoteca.com/wp-content/uploads/2020/08/Marvel-1-768x308.png',
         mark: 'Diamond Select',
         year: 2007,
         version: 'USA',
@@ -65,9 +65,9 @@ export let figures = [
     },
     {
         id: 4,
-        name: 'Megaman',
+        category: 'Megaman',
         model: 'D-Arts',
-        details: 'Megaman',
+        name: 'Megaman',
         price: 200,
         url: 'https://m.media-amazon.com/images/I/71HlvWvDD+L._AC_SX679_.jpg',
         img: [
@@ -78,7 +78,7 @@ export let figures = [
             'https://townsquare.media/site/622/files/2012/09/dartsmegaman4.jpeg',
             'https://mostwantedpawn.com/wp-content/uploads/2022/01/20220109_141800-scaled.jpg',
         ],
-        logo: 'megaman',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Mega_man_logo.png',
         mark: 'D-Arts',
         year: 2012,
         version: 'Japon',
@@ -88,9 +88,9 @@ export let figures = [
     },
     {
         id: 5,
-        name: 'Mc Farlane',
+        category: 'Mc Farlane',
         model: 'Dragons Series 8',
-        details: 'Berserker Dragon',
+        name: 'Berserker Dragon',
         price: 80,
         url: 'https://m.media-amazon.com/images/I/61RZlErMM7L._AC_SX679_.jpg',
         img: [
@@ -99,7 +99,7 @@ export let figures = [
             'https://m.media-amazon.com/images/I/615VIKUfSQL._AC_SL1000_.jpg',
             'https://m.media-amazon.com/images/I/61rPe-BWcpL._AC_SL1000_.jpg',
         ],
-        logo: 'mcfarlane',
+        logo: 'https://mcfarlane.com/wp-content/uploads/2016/01/McFar-Dragons-banner.jpg',
         mark: 'McFarlane',
         year: 2007,
         version: 'USA',
@@ -113,9 +113,9 @@ Producción limitada`,
     },
     {
         id: 6,
-        name: 'DC',
+        category: 'DC',
         model: 'Designer Series',
-        details: 'The Riddler',
+        name: 'The Riddler',
         price: 50,
         url: 'https://i.pinimg.com/564x/88/d1/59/88d159f7c1dc91163fcb691a677476f2.jpg',
         img: [
@@ -125,7 +125,7 @@ Producción limitada`,
             'http://3.bp.blogspot.com/-qjk3L3Lobzs/U5pY_0HRedI/AAAAAAAAJaU/bX53ZVg4EDY/s1600/IMG_4074.JPG',
             'http://1.bp.blogspot.com/-DgL7ia9Q_80/U5pZYMikrcI/AAAAAAAAJak/HR2CqF7qlMg/s1600/IMG_4076.JPG',
         ],
-        logo: 'dc',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/DC_Comics_logo.png',
         mark: 'Mattel',
         year: 2014,
         version: 'USA',
@@ -135,9 +135,9 @@ Producción limitada`,
     },
     {
         id: 7,
-        name: 'Saint Seiya',
+        category: 'Saint Seiya',
         model: 'Myth Cloth Ex',
-        details: 'Ikki Phoenix',
+        name: 'Ikki',
         price: 120,
         url: 'https://1.bp.blogspot.com/-aljT-L-04L4/X3XdJSh1DtI/AAAAAAABcDM/vGWd1eTJwSwMim7E0QfQrSCh88sDA7CdgCLcBGAsYHQ/s1200/Ikki%2B1.jpg',
         img: [
@@ -146,7 +146,7 @@ Producción limitada`,
             'https://1.bp.blogspot.com/-UUCWt7wgjxQ/X3XdKm6pObI/AAAAAAABcDc/Ocp7rOu0ITATlrQ9v3v7G_wj5ZNgrqs5wCLcBGAsYHQ/s1200/Ikki%2B6.jpg',
             'https://www.lulu-berlu.com/upload/image/saint-seiya-myth-cloth-ex---phoenix-ikki--version-2---revival-edition--p-image-436603-grande.jpg',
         ],
-        logo: 'saintseiya',
+        logo: 'https://static.wikia.nocookie.net/logopedia/images/c/c1/Saint_seiya_logo_by_poderheavy-d3gl8te.png',
         mark: 'Bandai',
         year: 2021,
         version: 'HK',
@@ -156,9 +156,9 @@ Producción limitada`,
     },
     {
         id: 8,
-        name: 'One Piece',
+        category: 'One Piece',
         model: 'VAH',
-        details: 'Monkey D. Luffy',
+        name: 'Monkey D. Luffy',
         price: 180,
         url: 'https://m.media-amazon.com/images/I/81JA7L9pRML._AC_SY879_.jpg',
         img: [
@@ -166,7 +166,7 @@ Producción limitada`,
             'https://m.media-amazon.com/images/I/81JA7L9pRML._AC_SY879_.jpg',
             'https://www.consolecorp.es/images/virtuemart/product/IMG-20210226-WA0036.jpg',
         ],
-        logo: 'onepiece',
+        logo: 'https://freepngimg.com/thumb/one_piece/22969-5-one-piece-logo-photos.png',
         mark: 'Megahouse',
         year: 2016,
         version: 'Japon',
@@ -180,9 +180,9 @@ Escala: 1/8`
     },
     {
         id: 9,
-        name: 'Marvel',
+        category: 'Marvel',
         model: 'Select',
-        details: 'Venom',
+        name: 'Venom',
         price: 40,
         url: 'https://m.media-amazon.com/images/I/81zElZ5mwOL._AC_SX679_.jpg',
         img: [
@@ -191,7 +191,7 @@ Escala: 1/8`
             'https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/640w/products/214288/300790/mavelselectvenom-inset4__47319.1550252941.jpg?c=2',
             'https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/640w/products/214288/300788/apivin0hi__71410.1550283917.jpg?c=2',
         ],
-        logo: 'marvel',
+        logo: 'https://www.funkoteca.com/wp-content/uploads/2020/08/Marvel-1-768x308.png',
         mark: 'Diamond Select',
         year: 2013,
         version: 'HK',
@@ -201,9 +201,9 @@ Escala: 1/8`
     },
     {
         id: 10,
-        name: 'Marvel',
+        category: 'Marvel',
         model: 'Legends',
-        details: 'Wolverine',
+        name: 'Wolverine',
         price: 80,
         url: 'https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/640w/products/261892/365074/apiwpaj4x__61608.1550255454.jpg?c=2',
         img: [
@@ -212,7 +212,7 @@ Escala: 1/8`
             'https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/640w/products/261892/365075/aping8nnw__64111.1550255453.jpg?c=2',
             'https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1280x1280/products/261892/386371/apizoxvtt__93897.1566506098.jpg?c=2',
         ],
-        logo: 'marvel',
+        logo: 'https://www.funkoteca.com/wp-content/uploads/2020/08/Marvel-1-768x308.png',
         mark: 'Hasbro',
         year: 2016,
         version: 'USA',
@@ -227,9 +227,9 @@ With the Marvel Legends Series, both kid and adult Marvel fans can start a legen
     },
     {
         id: 11,
-        name: 'DC',
+        category: 'DC',
         model: 'Essentials',
-        details: 'Batman Knightfall',
+        name: 'Batman Knightfall',
         price: 35,
         url: 'https://dungeonmarvels.com/75715-large_default/figura-dc-essentials-action-figure-universo-dc-batman-knightfall-18-cm.jpg',
         img: [
@@ -238,7 +238,7 @@ With the Marvel Legends Series, both kid and adult Marvel fans can start a legen
             'https://m.media-amazon.com/images/I/71dz1NbhUYL._AC_SY879_.jpg',
             'https://m.media-amazon.com/images/I/81iXQUhAfSL._AC_SL1500_.jpg',
         ],
-        logo: 'dc',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/DC_Comics_logo.png',
         mark: 'DC Collectibles',
         year: 2015,
         version: 'USA',
@@ -257,9 +257,9 @@ Nuevo, en empaque original cerrado.`
     },
     {
         id: 12,
-        name: 'One Piece',
+        category: 'One Piece',
         model: 'POP DX',
-        details: 'Carue',
+        name: 'Carue',
         price: 300,
         url: 'https://ae01.alicdn.com/kf/HTB1kKDDHVXXXXcaXFXXq6xXFXXXo/20cm-Japanese-Anime-One-Piece-Nefeltari-Vivi-s-Mount-P-O-P-DX-Carue-Karoo-PVC.jpg_Q90.jpg_.webp',
         img: [
@@ -270,7 +270,7 @@ Nuevo, en empaque original cerrado.`
             'https://ae01.alicdn.com/kf/HTB195nVHVXXXXbBXFXXq6xXFXXX0/20cm-Japanese-Anime-One-Piece-Nefeltari-Vivi-s-Mount-P-O-P-DX-Carue-Karoo-PVC.jpg_Q90.jpg_.webp',
             'https://ae01.alicdn.com/kf/HTB1KUAoHVXXXXXLXXXXq6xXFXXXs/20cm-Japanese-Anime-One-Piece-Nefeltari-Vivi-s-Mount-P-O-P-DX-Carue-Karoo-PVC.jpg_Q90.jpg_.webp',
         ],
-        logo: 'onepiece',
+        logo: 'https://freepngimg.com/thumb/one_piece/22969-5-one-piece-logo-photos.png',
         mark: 'Megahouse',
         year: 2012,
         version: 'Japan',
@@ -283,10 +283,118 @@ Size: Approx.20cm(H)
 Condition: New
 Package: 1x Karoo with retail box`
     },
+    {
+        id: 13,
+        category: 'Dragon Ball',
+        model: 'S. H. Figuarts ',
+        name: 'Goku',
+        price: 20,
+        url: 'https://cdn.shopify.com/s/files/1/0534/5184/9927/products/son-goku-a-saiyan-rise-on-the-earth-figure-14-cm-dragon-ball-z-sh-figuarts-re-issue-_2nd_-tarambanatoys_4_1024x1024.jpg',
+        img: [
+            'https://cdn.shopify.com/s/files/1/0534/5184/9927/products/son-goku-a-saiyan-rise-on-the-earth-figure-14-cm-dragon-ball-z-sh-figuarts-re-issue-_2nd_-tarambanatoys_4_1024x1024.jpg',
+            'https://cdn.shopify.com/s/files/1/0534/5184/9927/products/son-goku-a-saiyan-rise-on-the-earth-figure-14-cm-dragon-ball-z-sh-figuarts-re-issue-_2nd_-tarambanatoys_3_1024x1024.jpg',
+            'https://cdn.shopify.com/s/files/1/0534/5184/9927/products/son-goku-a-saiyan-rise-on-the-earth-figure-14-cm-dragon-ball-z-sh-figuarts-re-issue-_2nd_-tarambanatoys_1024x1024.jpg',
+            'https://cdn.shopify.com/s/files/1/0534/5184/9927/products/son-goku-a-saiyan-rise-on-the-earth-figure-14-cm-dragon-ball-z-sh-figuarts-re-issue-_2nd_-tarambanatoys_5_1024x1024.jpg',
+            'https://http2.mlstatic.com/D_NQ_NP_2X_978582-MLA46734849675_072021-F.webp',
+        ],
+        logo: 'https://www.pngmart.com/files/3/Dragon-Ball-Logo-PNG-Image.png',
+        mark: 'Figuarts',
+        year: 2020,
+        version: 'Japon',
+        condition: 0,
+        stock: 3,
+        description: `Tamashii Nations vuelve a reeditar para su línea de figuras articuladas de SH Figuarts, a Goku en su forma natural. Esta es la forma o estado natural de Goku una vez se hace adulto, tal y como aparece en la primera parte del manga y anime  Dragon Ball Z ( ドラゴンボールZ ). 
+
+La figura de 14cm esta fabricada en PVC y su gran numero de articulaciones nos proporciona la posibilidad de adoptar infinidad de poses. Poses que otorgan al personaje un gran realismo. 
+
+Esta incluye Incluye 2 manos izquierda + 4 manos derecha intercambiables, así como 3 expresiones de cara. Un básico en tu colección de SH Figuarts. `,
+    },
+    {
+        id: 14,
+        category: 'Street Fighter',
+        model: 'Classic',
+        name: 'Ken Masters',
+        price: 200,
+        url: 'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Street_Fighter_USF2_Ken_01.png',
+        img: [
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Street_Fighter_USF2_Ken_01.png',
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Street_Fighter_USF2_Ken_03.png',
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Street_Fighter_USF2_Ken_05.png',
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Street_Fighter_USF2_Ken_09.png',
+        ],
+        logo: 'https://static.wikia.nocookie.net/logopedia/images/a/ac/SF2fliperama-logo.png',
+        mark: 'Storm Collectibles',
+        year: 2019,
+        version: 'USA',
+        condition: 0,
+        stock: 4,
+        description: `Características de la figura
+Escala 1/12. Altura 18 cm.
+Múltiples puntos de articulación
+Hecha en PVC
+Nueva en caja
+Storm Collectibles
+
+La caja contiene
+1 Figura Ken
+3 Cabezas alternativas
+3 Pares de manos alternativas
+1 Efecto Shoryuken
+1 Efecto Hadouken
+1 Soporte de efecto Hadouken`,
+    },
+    {
+        id: 15,
+        category: 'Mortal Kombat',
+        model: '3 Ultime',
+        name: 'Smoke',
+        price: 200,
+        url: 'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Mortal_Kombat_Smoke_Cyborg_01.png',
+        img: [
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Mortal_Kombat_Smoke_Cyborg_01.png',
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Mortal_Kombat_Smoke_Cyborg_05.png',
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Mortal_Kombat_Smoke_Cyborg_04.png',
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Mortal_Kombat_Smoke_Cyborg_02.png',
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Mortal_Kombat_Smoke_Cyborg_07.png',
+            'https://robotnegro.com/wp-content/uploads/2021/10/Storm_Collectibles_Mortal_Kombat_Smoke_Cyborg_08.png',
+        ],
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mortalkombat-logo.svg/1280px-Mortalkombat-logo.svg.png',
+        mark: 'Storm Collectibles',
+        year: 2019,
+        version: 'USA',
+        condition: 0,
+        stock: 3,
+        description: `Características de la figura
+Exclusiva New York Comic Con 2019
+Escala 1/12. Altura 18 cm.
+Múltiples puntos de articulación
+Hecha en PVC
+Nueva en caja
+Storm Collectibles
+
+La caja contiene
+1 Figura Cyber Ninja Smoke
+3 Pares de manos alternativas
+4 Bombas de humo
+2 Efectos de humo
+1 Lanza
+1 Accesorio Fatality (Force-Fed Bomb)`,
+    },
 ]
 
+// db Logos
 
-
+export const logos = {
+    saintseiya: ['Saint Seiya'],
+    onepiece: ['One Piece'],
+    marvel: ['Marvel'],
+    megaman: ['Megaman'],
+    mcfarlane: ['Mc Farlane'],
+    dc: ['DC'],
+    dbz: ['Dragon Ball'],
+    sf: ['Street Fighter'],
+    mk: ['Mortal Kombat'],
+}
 
 
 // Preparando la promesa
