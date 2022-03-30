@@ -17,7 +17,7 @@ const ItemList = ({ products }) => {
                         <Link to={`/item/${n.id}`} key={n.id} >
                             <motion.div key={n.id} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
                                 <motion.button key={n.id} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
-                                    <Item key={n.id} img={n.url} name={n.name} model={n.model} details={n.details} price={n.price} />
+                                    <Item key={n.id} img={n.url} category={n.category} name={n.name} model={n.model} details={n.details} price={n.price} />
                                 </motion.button>
                             </motion.div>
                         </Link>
