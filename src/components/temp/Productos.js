@@ -90,7 +90,7 @@ export let figures = [
         id: 5,
         category: 'Mc Farlane',
         model: 'Dragons Series 8',
-        name: 'Berserker Dragon',
+        name: 'Berserker',
         price: 80,
         url: 'https://m.media-amazon.com/images/I/61RZlErMM7L._AC_SX679_.jpg',
         img: [

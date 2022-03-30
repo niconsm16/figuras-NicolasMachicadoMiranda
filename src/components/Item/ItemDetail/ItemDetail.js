@@ -1,23 +1,27 @@
 import React, { useState } from "react";
 import { ItemCondition } from "./ItemDetailElements";
-import ItemCount from "./ItemCount";
+import ItemCount from "../ItemCount/ItemCount";
 
 
 export const ItemDetail = ({ itemSelect }) => {
 
-    let { category, model, name, price, url, img, logo, mark, year, version, condition, stock, description } = itemSelect
+    let { id, category, model, name, price, url, img, logo, mark, year, version, condition, stock, description } = itemSelect
+
     let initial = 1
     let prodstock = stock
     let itemCondition = condition === 0 ? 'Nuevo' : 'Usado'
 
     // Funcion del ItemCount ===================================================================
 
-    let [cartNumber, setCartNumber] = useState(0) // Cantidad de valores el el carrito
+    let [count, setCount] = useState(1) // Cantidad de valores el el carrito
 
     const addToCart = (count) => {
-        setCartNumber(cartNumber = cartNumber + count)
-        count < 0 ? console.log(`${-count} productos eliminados`) : console.log(`${count} productos Agregados`); // Resolución al Desafío
-        console.log(`${cartNumber} productos en el Carrito`) // Carrito
+
+        const ItemToAdd = { id, name, price, url, count }
+        console.log(ItemToAdd)
+        // setCartNumber(cartNumber = cartNumber + count)
+        // count < 0 ? console.log(`${-count} productos eliminados`) : console.log(`${count} productos Agregados`); // Resolución al Desafío
+        // console.log(`${cartNumber} productos en el Carrito`) // Carrito
     }
 
     // ==========================================================================================
@@ -29,7 +33,7 @@ export const ItemDetail = ({ itemSelect }) => {
 
     return (
         <div className="absolute flex w-full h-screen top-0 pt-16 justify-center bg=[#e7e9e7]" >
-            <div className="flex w-11/12 h-auto justify-around px-6 py-8 justify-center bg-gradient-to-t from-zinc-200 to-zinc-100">
+            <div className="flex w-11/12 h-fit min-h-screen justify-around px-6 py-8 justify-center bg-gradient-to-t from-zinc-200 to-zinc-100">
                 <div className="m-1">
                     {
                         img.map((thumb, index) => { return (<img key={index} src={thumb} onClick={() => setImg(thumb)} alt='thumb' className="h-24 w-16 m-1 object-contain cursor-pointer" />) })
@@ -54,7 +58,7 @@ export const ItemDetail = ({ itemSelect }) => {
                         <p className="font-bold pb-1">Descripción:</p>
                         <p className="text-sm">{description}</p>
                     </div>
-                    <ItemCount stock={prodstock} initial={initial} onAdd={addToCart} />
+                    <ItemCount stock={prodstock} initial={initial} count={count} setCount={setCount} onAdd={addToCart} />
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { getItem, figures } from "../temp/Productos";
+import { getItem, figures } from "../../temp/Productos";
 import { ItemDetail } from "./ItemDetail";
-import WaitItem from '../WaitScenes/WaitDetail'
+import WaitItem from '../../WaitScenes/WaitDetail'
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 

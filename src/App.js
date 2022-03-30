@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import NavBar from './components/NavBar/NavBar';
 // import Home from './components/Home/Home';
-import { ItemListContainer } from "./components/Item/ItemListContainer"
-import { ItemDetailContainer } from './components/Item/ItemDetailContainer';
+import { ItemListContainer } from "./components/Item/ItemList/ItemListContainer"
+import { ItemDetailContainer } from './components/Item/ItemDetail/ItemDetailContainer';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 
