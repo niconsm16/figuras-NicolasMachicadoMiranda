@@ -6,17 +6,18 @@ import { CartWidget } from "../Cart/CartWidget";
 import { Link } from "react-router-dom";
 import { Dropdown } from "./Dropdown";
 
-const NavBar = ({ cartCount }) => {
+const NavBar = () => {
+
     return (
-        <Styled.MenuContainer className="w-full text-xl sticky top-0 z-10">
+        <Styled.MenuContainer className="w-full text-xl fixed top-0 z-10">
             <Styled.MenuWrapper className="flex w-full pl-10 h-16 bg-black top-0 text-white">
-                <Styled.MenuLogo className="flex justify-start items-center w-2/6 font-bakbak text-amarillo">
+                <Styled.MenuLogo className="flex justify-start items-center w-2/6 font-guy text-amarillo">
                     <FaStore className="mx-3 h-8 w-8 text-white" />
                     <Link to="/">{Menu.Market}</Link>
                 </Styled.MenuLogo>
                 <Styled.Menu className="flex w-full items-center justify-end antialised font-ptsans font-medium">
                     <Styled.MenuLI className="flex h-full items-center">
-                        <CartWidget cartCount={cartCount} />
+                        <CartWidget />
                         <Styled.MenuA>
                             <FaHome style={{ paddingRight: 3, marginRight: 2 }} />
                             <Link to="/">{Menu.Home}</Link>

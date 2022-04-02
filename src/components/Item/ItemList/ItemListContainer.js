@@ -3,7 +3,7 @@ import { getItem, figures } from "../../temp/Productos";
 import ItemList from './ItemList';
 import WaitItem from '../../WaitScenes/WaitList';
 import { useParams } from 'react-router-dom';
-
+import { Footer } from '../Footer/Footer';
 
 
 export const ItemListContainer = () => {
@@ -12,7 +12,6 @@ export const ItemListContainer = () => {
     let [completed, task] = useState(false)
 
     const { category } = useParams()
-
 
     useEffect(() => { // Mantenemos vigilado todo el tiempo los eventos para actualizar la data una vez llegada
         getItem(figures) // Ejecuto la demora simulando un servidor con el array 'figures'
@@ -28,13 +27,11 @@ export const ItemListContainer = () => {
             })
     }, [category])
 
-
+    // Render
 
     return (
         <>
-
-
-            {completed ? <ItemList products={products} /> : <WaitItem />}
+            {completed ? <><ItemList products={products} /><Footer /></> : <WaitItem />}
 
         </>
     )

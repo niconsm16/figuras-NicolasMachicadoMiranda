@@ -22,9 +22,8 @@ export const Dropdown = () => {
 
     let [menu, setMenu] = useState(false)
 
-    const clickHandle = () => {
-        setMenu(!menu)
-    }
+    const clickHandle = () => { setMenu(true) }
+    const mouseOut = () => { setMenu(false) }
 
     const variants = {
         open: {
@@ -33,7 +32,8 @@ export const Dropdown = () => {
             y: 0,
             zIndex: -1,
             transition: {
-                y: { stiffness: 1000, velocity: 100 }
+                y: { stiffness: 1000, velocity: 100 },
+                delay: 0
             }
         },
         closed: {
@@ -42,20 +42,26 @@ export const Dropdown = () => {
             y: -450,
             zIndex: -1,
             transition: {
-                y: { stiffness: 1000 }
+                y: { stiffness: 1000 },
+                delay: .25,
             }
         },
     }
 
     return (
         <>
-            <button className="text-grey-darkest font-thin text-xl z-[1]" onClick={clickHandle}>
+            <button className="text-grey-darkest font-thin text-xl z-[1]" onMouseOver={clickHandle} >
                 Categorias
             </button>
-            <motion.div initial={false} animate={menu ? "open" : "closed"} variants={variants} transition={{ duration: 0.5 }} className="relative top-[30px] left-[-100px]">
+            <motion.div className="relative top-[30px] left-[-100px]"
+                initial={false}
+                animate={menu ? "open" : "closed"}
+                variants={variants}
+                transition={{ duration: 0.5 }}
+            >
                 <div className="w-auto text-left">
                     <div className="absolute pb-2 text-white bg-black rounded-[0_0_5px_5px] ">
-                        <ul className='w-max'>
+                        <ul className='w-max' onMouseOver={clickHandle} onMouseOut={mouseOut}>
                             {
                                 names.map((n, index) => {
                                     return (

@@ -10,6 +10,9 @@ module.exports = {
       'fredoka': ['Fredoka, sans-serif'],
       'racing': ['Racing Sans One, cursive'],
       'guy': ['Luckiest Guy, cursive'],
+      'book': ['Futura Book'],
+      'futura': ['Futura Medium'],
+      'futura2': ['Futura Regular']
     },
     borderRadius: {
       'supboxes': '10px 10px 0 0',
@@ -35,16 +38,24 @@ module.exports = {
     extend: {
       colors: {
         amarillo: '#ffb300',
+        celeste: '#0095ff',
       },
-
+      dropShadow: {
+        'plus': '0 2px 3px rgba(0, 0, 0, 0.45)',
+      },
       animation: {
         anicolor: 'anicolor 30s linear infinite',
+        anicolor2: 'anicolor2 10s ease infinite',
         disappear: 'disappear 2s ease-in 1',
         appear: 'appear .5s ease-in-out 1',
       },
 
       keyframes: {
         anicolor: {
+          '0%, 100%': { color: 'white' },
+          '50%': { color: '#ffb300' },
+        },
+        anicolor2: {
           '0%, 100%': { color: 'white' },
           '50%': { color: '#ffb300' },
         },
@@ -62,7 +73,7 @@ module.exports = {
       },
       boxShadow: {
         'boxes': '0 0 9px 1px #a1a1a1',
-        'superhover': '0 13px 12px 2px rgb(0 0 0 / 21%)',
+        'superhover': '0 13px 12px 4px rgb(0 0 0 / 41%)',
       },
     },
   },

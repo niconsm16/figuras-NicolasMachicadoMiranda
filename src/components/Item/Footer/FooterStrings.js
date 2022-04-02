@@ -1,0 +1,6 @@
+export const Copyright = 'Copyright© 2022. Mi Marketplace'
+export const Newsletter = 'Suscribite a nuestro Newsletter'
+export const Subscribe = 'Suscribirse'
+export const Help = 'Ayuda'
+export const Privacy = 'Privacidad'
+export const Email = 'Ingresa tu correo electrónico'

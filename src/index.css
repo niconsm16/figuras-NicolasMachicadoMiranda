@@ -8,6 +8,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Futura Book';
+  src: url('./assets/fonts/futur2.ttf'),
+    url('./assets/fonts/futura_book_regular-webfont.woff2') format('woff2'),
+    url('./assets/fonts/futura_book_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura Medium';
+  src:
+    url('./assets/fonts/futura-medium-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Futura Regular';
+  src:
+    url('./assets/fonts/glyphicons-halflings-regular.woff2') format('woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,4 +47,28 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.8);
+}
+
+.plusfonts {
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+  filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 20%)) invert(17%) drop-shadow(1px 3px 0px rgba(0, 0, 0, 62%));
+  font-feature-settings: "smcp", "zero";
+  -webkit-font-feature-settings: "smcp", "zero";
+  -moz-font-feature-settings: "smcp", "zero";
+}
+
+.fonts {
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+  font-feature-settings: "smcp", "zero";
+  -webkit-font-feature-settings: "smcp", "zero";
+  -moz-font-feature-settings: "smcp", "zero";
+}
+
+.cartBG {
+  clip-path: circle(50% at 50% 50%);
+  background-color: #dc50ff;
 }

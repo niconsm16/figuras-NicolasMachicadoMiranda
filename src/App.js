@@ -1,34 +1,35 @@
-import React, { useState } from 'react';
 import NavBar from './components/NavBar/NavBar';
 // import Home from './components/Home/Home';
 import { ItemListContainer } from "./components/Item/ItemList/ItemListContainer"
 import { ItemDetailContainer } from './components/Item/ItemDetail/ItemDetailContainer';
+import Cart from './components/Cart/Cart';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { CartProvider } from './components/Cart/CartContext';
+
 
 
 function App() {
 
-  let [cartCount, setCartCount] = useState(0)
-
-  let valor = cartNumber => setCartCount(cartCount = cartNumber)
 
   return (
     <>
+      <CartProvider>
+        <BrowserRouter>
 
-      <BrowserRouter>
+          <NavBar />
 
-        <NavBar cartCount={(cartCount)} />
+          <Routes>
+            {/* <Route path='/' element={<Home />} /> */}
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/item/:item' element={<ItemDetailContainer />} />
+            <Route path='/category/:category' element={<ItemListContainer />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='*' element={<Navigate to='/' />} />
+          </Routes>
 
-        <Routes>
-          {/* <Route path='/' element={<Home />} /> */}
-          <Route path='/' element={<ItemListContainer devolution={valor} />} />
-          <Route path='/item/:item' element={<ItemDetailContainer />} />
-          <Route path='/category/:category' element={<ItemListContainer devolution={valor} />} />
-          <Route path='*' element={<Navigate to='/' />} />
-        </Routes>
 
-      </BrowserRouter>
-
+        </BrowserRouter>
+      </CartProvider>
     </>
   );
 }
