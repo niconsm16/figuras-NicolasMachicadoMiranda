@@ -48,25 +48,37 @@ export const Dropdown = () => {
         },
     }
 
+    // Tailwind Class
+
+    const cCategoryButton = "text-grey-darkest font-thin text-xl z-[1]"
+    const cDropdownMotion = "relative top-[30px] left-[-100px]"
+    const cDropdownBox = "absolute pb-2 text-white bg-black rounded-[0_0_5px_5px] "
+    const cLink = "px-4 py-1 hover:bg-amarillo hover:text-black w-full"
+    // Render
+
     return (
         <>
-            <button className="text-grey-darkest font-thin text-xl z-[1]" onMouseOver={clickHandle} >
+            <button className={cCategoryButton}
+                onMouseOver={clickHandle}
+                onMouseOut={mouseOut} >
                 Categorias
             </button>
-            <motion.div className="relative top-[30px] left-[-100px]"
+            <motion.div className={cDropdownMotion}
                 initial={false}
                 animate={menu ? "open" : "closed"}
                 variants={variants}
                 transition={{ duration: 0.5 }}
             >
                 <div className="w-auto text-left">
-                    <div className="absolute pb-2 text-white bg-black rounded-[0_0_5px_5px] ">
-                        <ul className='w-max' onMouseOver={clickHandle} onMouseOut={mouseOut}>
+                    <div className={cDropdownBox}>
+                        <ul className='w-max'
+                            onMouseOver={clickHandle}
+                            onMouseOut={mouseOut}>
                             {
                                 names.map((n, index) => {
                                     return (
                                         <Link to={`/category/${n[0]}`} key={index} >
-                                            <li key={n.indexOf()} className="px-4 py-1 hover:bg-amarillo hover:text-black w-full">{n[0]}</li>
+                                            <li key={n.indexOf()} className={cLink}>{n[0]}</li>
                                         </Link>
                                     )
                                 })

@@ -7,10 +7,18 @@ const greeting = 'Los + Buscados del mes'
 
 const ItemList = ({ products }) => {
 
+    // Tailwind Class
+
+    const cContainer = "animate-appear bg-zinc-200 pt-24 pb-8  min-h-[89.3vh]"
+    const cTitle = "text-center text-celeste plusfonts text-5xl antialised font-bold font-guy mx-8"
+    const cProduct = "flex justify-center text-center m-6 select-none flex-wrap"
+
+    // Render
+
     return (
-        <div className="animate-appear bg-zinc-200 pt-24 pb-8">
-            <h2 className="text-center text-celeste plusfonts text-5xl antialised font-bold font-guy mx-8">{greeting}</h2>
-            <div className="flex justify-center text-center m-6 select-none flex-wrap">
+        <div className={cContainer}>
+            <h2 className={cTitle}>{greeting}</h2>
+            <div className={cProduct}>
                 {products.map((n) => { // Mapeamos todos los productos
                     return (
                         <Link to={`/item/${n.id}`} key={n.id} >
@@ -25,7 +33,13 @@ const ItemList = ({ products }) => {
                                     transition={{ duration: .1 }}
 
                                 >
-                                    <Item img={n.url} category={n.category} name={n.name} model={n.model} details={n.details} price={n.price} />
+                                    <Item
+                                        img={n.url}
+                                        category={n.category}
+                                        name={n.name}
+                                        model={n.model}
+                                        details={n.details}
+                                        price={n.price} />
                                 </motion.button>
                             </motion.div>
                         </Link>

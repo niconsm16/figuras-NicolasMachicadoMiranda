@@ -9,7 +9,7 @@ import { Dropdown } from "./Dropdown";
 const NavBar = () => {
 
     return (
-        <Styled.MenuContainer className="w-full text-xl fixed top-0 z-10">
+        <Styled.MenuContainer className="w-full text-xl fixed top-0 z-50">
             <Styled.MenuWrapper className="flex w-full pl-10 h-16 bg-black top-0 text-white">
                 <Styled.MenuLogo className="flex justify-start items-center w-2/6 font-guy text-amarillo">
                     <FaStore className="mx-3 h-8 w-8 text-white" />

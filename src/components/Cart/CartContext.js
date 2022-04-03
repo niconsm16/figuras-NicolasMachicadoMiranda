@@ -20,7 +20,9 @@ export const CartProvider = ({ children }) => {
     }
 
     const removeItem = (id) => {
-        setCart(cart.filter(n => n.id !== id))
+        cart.length === 1
+            ? setCart([])
+            : setCart(cart.filter(n => n.id !== id))
     }
 
     const cartNum = () => {

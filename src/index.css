@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Futura Book';
-  src: url('./assets/fonts/futur2.ttf'),
+  src:
     url('./assets/fonts/futura_book_regular-webfont.woff2') format('woff2'),
     url('./assets/fonts/futura_book_regular-webfont.woff') format('woff');
 }
@@ -66,6 +66,11 @@ body::-webkit-scrollbar-track {
   font-feature-settings: "smcp", "zero";
   -webkit-font-feature-settings: "smcp", "zero";
   -moz-font-feature-settings: "smcp", "zero";
+}
+
+.blend {
+  background: linear-gradient(90deg, black, transparent);
+  background-blend-mode: overlay;
 }
 
 .cartBG {

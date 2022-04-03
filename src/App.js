@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar/NavBar';
-// import Home from './components/Home/Home';
+import Home from './components/Home/Home';
 import { ItemListContainer } from "./components/Item/ItemList/ItemListContainer"
 import { ItemDetailContainer } from './components/Item/ItemDetail/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
@@ -19,7 +19,7 @@ function App() {
           <NavBar />
 
           <Routes>
-            {/* <Route path='/' element={<Home />} /> */}
+            <Route path='/home' element={<Home />} />
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/item/:item' element={<ItemDetailContainer />} />
             <Route path='/category/:category' element={<ItemListContainer />} />

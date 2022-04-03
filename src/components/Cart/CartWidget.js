@@ -8,11 +8,18 @@ export const CartWidget = () => {
 
     const { cartNum } = useContext(CartContext)
 
+    // Tailwind Class
+
+    const cNum = " rounded-full px-2"
+    const cCart = "fill-amarillo hover:bg-black hover:fill-[#7ae800] mr-2.5 cursor-pointer ease-in duration-300"
+
+    // Render
+
     return (
         <>
-            <span className=" rounded-full px-2">{cartNum()}</span>
+            <span className={cNum}>{cartNum()}</span>
             <Link to='/cart'>
-                < FaShoppingCart className="fill-amarillo hover:bg-black hover:fill-[#7ae800] mr-2.5 cursor-pointer ease-in duration-300" />
+                < FaShoppingCart className={cCart} />
             </Link>
         </>
     )
