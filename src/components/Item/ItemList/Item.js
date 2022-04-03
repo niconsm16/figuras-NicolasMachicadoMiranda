@@ -6,7 +6,7 @@ const Item = ({ img, name, model, category, price }) => {
 
     // Tailwind Class
 
-    const cContainer = "min-w-[16rem] pb-0 m-2 bg-[#f9f9f9] hover:bg-gradient-to-t hover:from-zinc-300 hover:to-white hover:text-white rounded-lg hover:shadow-superhover font-fredoka antialiased text-xl hover:animate-anicolor2  hover:font-bold transition duration-200 ease-in cursor-pointer"
+    const cContainer = "min-w-[16rem] pb-0 m-2 bg-[#f9f9f9] hover:bg-gradient-to-b hover:from-zinc-300 hover:to-white hover:text-white rounded-lg hover:shadow-superhover font-fredoka antialiased text-xl hover:animate-anicolor2  hover:font-bold transition duration-200 ease-in cursor-pointer"
     const cGrad1 = "linear-gradient(to right, #8b5cf6 -200%, #6945bc -100%, #8b5cf6 0%, #6945bc 100%)"
     const cGrad2 = "linear-gradient(to right, #8b5cf6 -100%, #6945bc 0%, #8b5cf6 100%, #6945bc 200%)"
     const cGrad3 = "linear-gradient(to right, #8b5cf6 0%, #6945bc 100%, #8b5cf6 200%, #6945bc 300%)"

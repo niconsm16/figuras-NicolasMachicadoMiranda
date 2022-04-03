@@ -23,7 +23,7 @@ export const Footer = () => {
 
     return (
         <div className={cContainer}>
-            <div className="">
+            <div>
                 <div className={cSocial}>
                     <FaWhatsapp className={cWsp} />
                     <FaInstagram className={cIg} />

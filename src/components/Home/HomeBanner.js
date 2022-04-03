@@ -98,11 +98,11 @@ const HomeBanner = () => {
 
     // Tailwind Class
 
-    const cBannerContainer = `bg-black overflow-hidden z-0 bg-gradient-to-l before:absolute before:z-10 before:top-0 before:w-full before:h-[68.5vh] before:bg-gradient-to-r ${(count % 2) === 0 ? 'before:from-black before:to-transparent' : 'before:from-transparent before:to-black'} `
-    const cBox = " flex mt-16 bg-black h-[60vh] w-full"
-    const cMotionLegend = `absolute flex h-[70%] items-center top-[0] mx-12 z-30 w-1/3 ${(count % 2) === 0 ? 'left-0 text-left' : 'right-0 text-right'}`
+    const cBannerContainer = `bg-black overflow-hidden z-0 bg-gradient-to-l before:absolute before:z-10 before:top-0 before:w-full before:h-[28rem] before:bg-gradient-to-r ${(count % 2) === 0 ? 'before:from-black before:to-transparent' : 'before:from-transparent before:to-black'} `
+    const cBox = " flex mt-16 bg-black h-96 w-full"
+    const cMotionLegend = `absolute flex h-[28rem] items-center top-[0] mx-12 z-30 w-1/3 ${(count % 2) === 0 ? 'left-0 text-left' : 'right-0 text-right'}`
     const cLegend = 'flex place-self-center grid text-white font-fredoka text-6xl transition-opacity'
-    const cImg = "w-full overflow-hidden object-cover h-[60vh] blend"
+    const cImg = "w-full overflow-hidden object-cover h-96 blend"
 
     // Renderizado
 
