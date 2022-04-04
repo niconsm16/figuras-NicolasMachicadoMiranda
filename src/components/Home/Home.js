@@ -8,14 +8,12 @@ import { ItemListContainer } from "../Item/ItemList/ItemListContainer"
 
 const Home = () => {
 
-
     return (
         <>
             <HomeBanner className="h-96 overflow-hidden" />
             <ItemListContainer />
         </>
     )
-
 }
 
 export default Home
