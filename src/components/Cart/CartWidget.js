@@ -17,7 +17,7 @@ export const CartWidget = () => {
 
     return (
         <>
-            <span className={cNum}>{cartNum()}</span>
+            {cartNum() > 0 && <span className={cNum}>{cartNum()}</span>}
             <Link to='/cart'>
                 < FaShoppingCart className={cCart} />
             </Link>
