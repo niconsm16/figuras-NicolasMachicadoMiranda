@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { getItem, figures } from "../../temp/Productos";
+// MOCK import { getItem, figures } from "../../temp/Productos";
 import { ItemDetail } from "./ItemDetail";
 import WaitItem from '../../WaitScenes/WaitDetail'
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import { figuresdb } from "../../../firebase/config";
+import { doc, getDoc } from 'firebase/firestore'
 
 
 export const ItemDetailContainer = () => {
@@ -15,10 +17,19 @@ export const ItemDetailContainer = () => {
 
 
     useEffect(() => {
-        getItem(figures)
-            .then((res) => setDetails(res.find((itemSelect) => itemSelect.id === Number(item))))
-            .then(() => task(true))
-            .catch((err) => console.log('no se pudo recibir el detalle: ', err))
+
+        const itemRef = doc(figuresdb, 'productos', item)
+        getDoc(itemRef)
+            .then(res => {
+                setDetails({ id: res.id, ...res.data() })
+                task(true)
+            })
+
+
+        // getItem(figures)
+        //     .then((res) => setDetails(res.find((itemSelect) => itemSelect.id === Number(item))))
+        //     .then(() => task(true))
+        //     .catch((err) => console.log('no se pudo recibir el detalle: ', err))
     }, [item])
 
     return (
