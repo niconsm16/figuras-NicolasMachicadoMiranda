@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { Currency } from '../Item/ItemDetail/ItemDetailStrings'
 import { CartContext } from "./CartContext"
-import { DelCart, EmptyCart, Price, Quantity, Subtotal, Total, YouCart } from "./CartStrings"
+import { DelCart, EmptyCart, Price, Quantity, Subtotal, Total, YouCart, Unit, Units } from "./CartStrings"
 import { FaTimesCircle } from 'react-icons/fa'
 import { motion } from "framer-motion"
 
@@ -59,7 +59,7 @@ const Cart = () => {
                                 <div className={cItemInfoBox}>
                                     <div className={cName}>{n.name}</div>
                                     <div>{Price}: {n.price},00 {Currency}</div>
-                                    <div>{Quantity}: {n.count} {n.count === 1 ? 'unidad' : 'unidades'}</div>
+                                    <div>{Quantity}: {n.count} {n.count === 1 ? Unit : Units}</div>
                                     <div className={cSub}>{Subtotal}: {n.count * n.price},00 {Currency}</div>
                                 </div>
                                 <div className="w-28">

@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
-import { getItem, logos } from '../temp/Productos'
+// MOCK import { getItem, logos } from '../temp/Productos'
 import { Link } from 'react-router-dom'
+import { collection, getDocs } from 'firebase/firestore'
+import { figuresdb } from '../../firebase/config'
+import { variants } from './DropdownVariants'
 
 export const Dropdown = () => {
 
@@ -11,9 +14,13 @@ export const Dropdown = () => {
     let [names, setNames] = useState([])
 
     useEffect(() => {
-        getItem(logos)
+
+        const categoryRef = collection(figuresdb, 'logos')
+
+        getDocs(categoryRef)
             .then((res) => {
-                setNames(Object.values(res))
+                const logos = res.docs.map((logo) => (Object.values({ ...logo.data() })))
+                setNames(logos[0])
             })
             .catch((err) => console.log('dropdown', err))
     }, [])
@@ -25,35 +32,13 @@ export const Dropdown = () => {
     const clickHandle = () => { setMenu(true) }
     const mouseOut = () => { setMenu(false) }
 
-    const variants = {
-        open: {
-            opacity: 1,
-            x: 0,
-            y: 0,
-            zIndex: -1,
-            transition: {
-                y: { stiffness: 1000, velocity: 100 },
-                delay: 0
-            }
-        },
-        closed: {
-            opacity: 0,
-            x: 0,
-            y: -450,
-            zIndex: -1,
-            transition: {
-                y: { stiffness: 1000 },
-                delay: .25,
-            }
-        },
-    }
-
     // Tailwind Class
 
     const cCategoryButton = "text-grey-darkest font-thin text-xl z-[1]"
     const cDropdownMotion = "relative top-[30px] left-[-100px]"
     const cDropdownBox = "absolute pb-2 text-white bg-black rounded-[0_0_5px_5px] "
     const cLink = "px-4 py-1 hover:bg-amarillo hover:text-black w-full"
+
     // Render
 
     return (
@@ -77,8 +62,8 @@ export const Dropdown = () => {
                             {
                                 names.map((n, index) => {
                                     return (
-                                        <Link to={`/category/${n[0]}`} key={index} >
-                                            <li key={n.indexOf()} className={cLink}>{n[0]}</li>
+                                        <Link to={`/category/${n}`} key={index} >
+                                            <li key={n.indexOf()} className={cLink}>{n}</li>
                                         </Link>
                                     )
                                 })

@@ -20,7 +20,9 @@ const NavBar = () => {
                         <CartWidget />
                         <Styled.MenuA>
                             <FaHome style={{ paddingRight: 3, marginRight: 2 }} />
-                            <Link to="/">{Menu.Home}</Link>
+                            <Link to="/">
+                                {Menu.Home}
+                            </Link>
                         </Styled.MenuA>
                         <Styled.MenuA>
                             <FaAngleDoubleDown style={{ paddingRight: 3, marginRight: 2 }} />
@@ -29,21 +31,29 @@ const NavBar = () => {
                         </Styled.MenuA>
                         <Styled.MenuA>
                             <FaGlobeAmericas style={{ paddingRight: 3, marginRight: 2 }} />
-                            {Menu.Buscados}
+                            <Link to="/buscados">
+                                {Menu.Buscados}
+                            </Link>
                         </Styled.MenuA>
                         <Styled.MenuA>
                             <FaPlus style={{ paddingRight: 3, marginRight: 2 }} />
-                            {Menu.Solicitados}
+                            <Link to='/solicitados'>
+                                {Menu.Solicitados}
+                            </Link>
                         </Styled.MenuA>
                         <Styled.MenuA>
                             <FaGavel style={{ paddingRight: 3, marginRight: 2 }} />
-                            {Menu.Pujas}
+                            <Link to='/error'>
+                                {Menu.Pujas}
+                            </Link>
                         </Styled.MenuA>
                     </Styled.MenuLI>
                     <Styled.MenuProfile className="flex h-full items-center">
                         <Styled.MenuProfileA>
                             <FaUserAlt style={{ paddingRight: 3, marginRight: 2 }} />
-                            {Menu.Profile}
+                            <Link to='/error'>
+                                {Menu.Profile}
+                            </Link>
                         </Styled.MenuProfileA>
                     </Styled.MenuProfile>
                 </Styled.Menu>
