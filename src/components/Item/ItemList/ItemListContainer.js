@@ -11,8 +11,8 @@ import HomeBanner from '../../Home/HomeBanner';
 
 export const ItemListContainer = () => {
 
-    let [products, setProducts] = useState([]) // Seteo el estado inicial vacío en array
-    let [completed, task] = useState(false)
+    const [products, setProducts] = useState([]) // Seteo el estado inicial vacío en array
+    const [completed, task] = useState(false)
 
     const { category, solicitados } = useParams()
 

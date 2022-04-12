@@ -28,7 +28,7 @@ export const MenuProfileA = styled.div`
             -o-transition: all .5s;
 
     &:hover{
-        background: #0095ff;
+        background: #62beff;
         color: black;
         height: 100%;
         display: flex;

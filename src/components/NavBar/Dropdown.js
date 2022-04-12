@@ -11,7 +11,7 @@ export const Dropdown = () => {
     // Creacion de Array de Categorias ========================================================
 
 
-    let [names, setNames] = useState([])
+    const [names, setNames] = useState([])
 
     useEffect(() => {
 
@@ -27,7 +27,7 @@ export const Dropdown = () => {
 
     // Variables y Funciones Framer ============================================================
 
-    let [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(false)
 
     const clickHandle = () => { setMenu(true) }
     const mouseOut = () => { setMenu(false) }

@@ -10,8 +10,8 @@ import { doc, getDoc } from 'firebase/firestore'
 
 export const ItemDetailContainer = () => {
 
-    let [details, setDetails] = useState({})
-    let [completed, task] = useState(false)
+    const [details, setDetails] = useState({})
+    const [completed, task] = useState(false)
 
     const { item } = useParams()
 
@@ -24,12 +24,6 @@ export const ItemDetailContainer = () => {
                 setDetails({ id: res.id, ...res.data() })
                 task(true)
             })
-
-
-        // getItem(figures)
-        //     .then((res) => setDetails(res.find((itemSelect) => itemSelect.id === Number(item))))
-        //     .then(() => task(true))
-        //     .catch((err) => console.log('no se pudo recibir el detalle: ', err))
     }, [item])
 
     return (

@@ -13,3 +13,9 @@ border-radius:5px ;
 -ms-border-radius:5px ;
 -o-border-radius:5px ;
 `
+export const ItemContainerStyle = styled.div`
+background: url('https://i.postimg.cc/d3Ljbwry/5551771.jpg'), linear-gradient(110deg, #${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}, #${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)});
+background-blend-mode: soft-light;
+`
+
+// background: url('https://i.postimg.cc/d3Ljbwry/5551771.jpg'), linear-gradient(110deg, purple, #7ae800);

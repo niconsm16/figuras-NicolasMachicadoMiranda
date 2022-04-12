@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { ItemCondition } from "./ItemDetailElements";
+import { ItemCondition, ItemContainerStyle } from "./ItemDetailElements";
 import ItemCount from "../ItemCount/ItemCount";
 import { CartContext } from "../../Cart/CartContext";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ export const ItemDetail = ({ itemSelect }) => {
 
     // Funcion del ItemCount ===================================================================
 
-    let [count, setCount] = useState(1) // Cantidad de valores el el carrito
+    const [count, setCount] = useState(1) // Cantidad de valores el el carrito
 
     const addToCart = (count) => {
         const ItemToAdd = { id, name, price, url, count }
@@ -33,7 +33,7 @@ export const ItemDetail = ({ itemSelect }) => {
 
     // ==========================================================================================
 
-    let [bigImg, setImg] = useState(url) // Hook para los thumbs
+    const [bigImg, setImg] = useState(url) // Hook para los thumbs
 
     // Tailwind Class
 
@@ -53,7 +53,7 @@ export const ItemDetail = ({ itemSelect }) => {
     // Render
 
     return (
-        <div className={cContainer} >
+        <ItemContainerStyle className={cContainer} >
             <div className={cBox}>
                 <div className="m-1">
                     { // Mapeo de thumbs de cada producto
@@ -105,6 +105,6 @@ export const ItemDetail = ({ itemSelect }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </ItemContainerStyle>
     )
 }

@@ -35,7 +35,7 @@ const ItemList = ({ products }) => {
 
     return (
         <div className={cContainer}>
-            <h2 className={!routes.category ? cTitle : false}>{title()}</h2>
+            <h2 className={!routes.category ? cTitle : undefined}>{title()}</h2>
             <div className={cProduct}>
                 {products.map((n) => { // Mapeamos todos los productos
                     return (
