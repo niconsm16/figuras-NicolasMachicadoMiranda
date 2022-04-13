@@ -47,7 +47,7 @@ export const ItemDetail = ({ itemSelect }) => {
     const cName = "font-racing pr-1 text-4xl my-1"
     const cPrice = "text-2xl pr-1 font-bakbak bg-gradient-to-r from-transparent to-violet-500"
     const cItemData = "flex text-[small] flex-col items-end my-2"
-    const cItemCount = "flex flex-col w-full items-center"
+    const cItemCount = "flex flex-col w-full items-center h-full justify-center"
     const cCartButton = "flex w-48 justify-center items-center font-fredoka font-bold rounded text-center p-2 mx-8 bg-amarillo hover:bg-black hover:text-amarillo transition duration-300 uppercase antialiased select-none"
 
     // Render

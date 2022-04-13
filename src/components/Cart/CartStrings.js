@@ -7,3 +7,4 @@ export const Unit = 'Unidad'
 export const Units = 'Unidades'
 export const YouCart = 'Tu Carrito'
 export const DelCart = 'Vaciar Carrito'
+export const GoCheckout = "Ir a Pagar"

@@ -6,13 +6,13 @@
 
 ---
 
-Entrega del desafío final de <a href="https://www.coderhouse.com/" alt="Coderhouse">Coderhouse</a> como parte del programa de <b><i>React Js</i></b> Comisión 26240<br><br>
+Entrega del desafío final de <a href="https://www.coderhouse.com/" alt="Coderhouse">Coderhouse</a> como parte del programa de <b><i>React Js</i></b> Comisión #26240:<br>
 
 Manejo de Hooks, componentes funcionales, forms<br>
 Uso del framework TailwindCss para los estilos<br>
-Uso de la librería Styled Components<br>
-Uso de la librería Framer Motion<br>
-Vinculación con Firebase<br><br>
+Uso de la librería Styled Components para estilos personalizados<br>
+Uso de la librería Framer Motion para animaciones<br>
+Vinculación con Firebase para base de datos<br><br>
 
 ---
 
@@ -25,7 +25,7 @@ Vinculación con Firebase<br><br>
   <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> 
     <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="80" height="80"/> </a> 
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="80" height="80"/> </a></p>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="80" height="80"/> </a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="reactjs" width="80" height="80"/> </a></p>
 

@@ -1,9 +1,10 @@
 import { useContext } from "react"
 import { Currency } from '../Item/ItemDetail/ItemDetailStrings'
 import { CartContext } from "./CartContext"
-import { DelCart, EmptyCart, Price, Quantity, Subtotal, Total, YouCart, Unit, Units } from "./CartStrings"
-import { FaTimesCircle } from 'react-icons/fa'
+import { DelCart, EmptyCart, Price, Quantity, Subtotal, Total, YouCart, Unit, Units, GoCheckout } from "./CartStrings"
+import { FaTimesCircle, FaMoneyBillWave } from 'react-icons/fa'
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 const Cart = () => {
 
@@ -28,8 +29,10 @@ const Cart = () => {
     const cName = "uppercase font-bold text-white"
     const cSub = "text-[#7ae800]"
     const cImg = "w-28 h-28 object-contain px-4"
-    const cDelCart = "w-fit mx-20 bg-amarillo hover:bg-yellow-400 my-1 py-2 px-4 font-guy text-black rounded-lg transition duration-300 hover:scale-110 tracking-wide plusfonts"
-    const cTotalBox = "w-1/2 flex justify-end items-center text-3xl rounded mx-20 my-1 py-2 px-4 pb-12 font-fredoka tracking-wide plusfonts text-celeste"
+    const cDelCart = "w-fit mx-20 bg-amarillo my-1 py-2 px-4 font-guy text-black rounded-lg transition duration-300 hover:scale-110 tracking-wide plusfonts"
+    const cGoCheckContainer = "flex w-1/3 justify-center"
+    const cGoCheck = "flex w-fit h-fit my-1 py-2 px-4 items-center bg-indigo-700 text-zinc-100 font-guy rounded-lg transition duration-300 hover:scale-110 tracking-wide plusfonts "
+    const cTotalContainer = "w-1/3 flex justify-end items-center text-3xl rounded mx-20 my-1 py-2 px-4 pb-12 font-fredoka tracking-wide plusfonts text-celeste"
     const cTotalTitle = "font-guy pr-2"
     const cTotal = "text-black font-guy"
 
@@ -74,10 +77,13 @@ const Cart = () => {
                     ? ''
                     : (
                         <div className="flex">
-                            <div className="w-1/2">
+                            <div className="w-1/3">
                                 <button onClick={emptyCart} className={cDelCart}>{DelCart}</button>
                             </div>
-                            <div className={cTotalBox}>
+                            <div className={cGoCheckContainer}>
+                                <Link to="/checkout" className={cGoCheck}><FaMoneyBillWave className="mr-2" />{GoCheckout}</Link>
+                            </div>
+                            <div className={cTotalContainer}>
                                 <div className={cTotalTitle}>{Total}: </div>
                                 <div className={cTotal}> {cartTotal()} {Currency}</div>
                             </div>
