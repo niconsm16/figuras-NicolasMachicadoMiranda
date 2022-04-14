@@ -75,12 +75,22 @@ const Checkout = () => {
             })
     }
 
+    // Variantes de motion
+
     const spring = {
         type: "spring",
         stiffness: 700,
         damping: 30,
         duration: 0.5,
-    };
+    }
+    const springOut = {
+        //type: "spring",
+        stiffness: .1,
+        damping: 100,
+        duration: 0.1,
+    }
+
+    // Funciones Alternativas de Pago
 
     const mPago = () => {
         return (
@@ -127,6 +137,7 @@ const Checkout = () => {
     focus:invalid:border-pink-500 focus:invalid:ring-pink-500 focus:invalid:caret-pink-600`
     const cButton = "w-fit mt-4 px-3 py-2 font-fredoka text-white bg-celeste hover:bg-blue-700 transition duration-300 rounded"
 
+    // Fase de Transacción exitosa
 
     if (orderId) {
         return <div className={cSuccessContainer}>
@@ -134,7 +145,15 @@ const Checkout = () => {
 
             <h2 className={cIdMessage}>Este es el ID de tu transacción: <b>{orderId}</b></h2>
 
-            <Link to='/' className={cBack}>Volver al inicio</Link>
+            <motion.div className="z-10"
+                initial={{ y: 0, scale: 1 }}
+                transition={{ duration: .25 }}
+                whileTap={{ y: -500, scale: 50 }}
+            >
+                <Link to='/' className={cBack}>
+                    Volver al inicio
+                </Link>
+            </motion.div>
             <div className={`${cWave} fill-lime-400`}>
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" >
                     <path d="M-40.34,82.41 C157.16,-77.44 207.95,126.81 573.08,-18.23 L533.01,165.30 L0.00,150.00 Z" >
@@ -294,7 +313,12 @@ const Checkout = () => {
                     />
                 </fieldset>
                 <fieldset className="col-span-4 h-full mt-4 justify-self-center ">
-                    <button type="submit" className={cButton}>Enviar</button>
+                    <motion.button
+                        className={cButton}
+                        type="submit"
+                        whileTap={{ scale: 1250 }}
+                        layout transition={springOut}
+                    >Enviar</motion.button>
                 </fieldset>
             </form>
 
