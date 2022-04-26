@@ -19,20 +19,21 @@ const Cart = () => {
 
     // Tailwind Class
 
-    const cContainer = "bg-zinc-200 w-full min-h-screen max-h-full pt-16"
+    const cContainer = "bg-zinc-200 w-full min-h-screen max-h-full pt-16 md:pt-0"
     const cTitle = "text-center text-6xl font-guy pt-12 mb-10 tracking-wide plusfonts text-celeste"
-    const cEmptyCart = "flex justify-center items-center bg-black text-white rounded mx-20 my-1 py-2 font-fredoka"
-    const cItemBox = "flex justify-between items-center bg-zinc-500 text-zinc-200 border-black mx-20 my-1 py-2 rounded"
+    const cEmptyCart = "flex justify-center items-center bg-black text-white rounded mx-20 md:mx-0 my-1 py-2 font-fredoka"
+    const cItemscontainer = "md:flex md:justify-center"
+    const cItemBox = "flex md:w-max justify-between items-center bg-zinc-500 text-zinc-200 border-black mx-20 md:mx-0 my-1 py-2 rounded"
     const cDelButtonBox = "w-5 pl-4 text-2xl hover:text-white transition duration-300"
     const cDelButton = "drop-shadow-plus"
     const cItemInfoBox = "px-8 font-fredoka w-5/6 text-shadow-fort"
     const cName = "uppercase font-bold text-white"
     const cSub = "text-[#7ae800]"
     const cImg = "w-28 h-28 object-contain px-4"
-    const cDelCart = "w-fit mx-20 bg-amarillo my-1 py-2 px-4 font-guy text-black rounded-lg transition duration-300 hover:scale-110 tracking-wide plusfonts"
-    const cGoCheckContainer = "flex w-1/3 justify-center"
-    const cGoCheck = "flex w-fit h-fit my-1 py-2 px-4 items-center bg-indigo-700 text-zinc-100 font-guy rounded-lg transition duration-300 hover:scale-110 tracking-wide plusfonts "
-    const cTotalContainer = "w-1/3 flex justify-end items-center text-3xl rounded mx-20 my-1 py-2 px-4 pb-12 font-fredoka tracking-wide plusfonts text-celeste"
+    const cDelCart = "w-fit md:w-full mx-20 md:mx-0 bg-amarillo my-1 py-2 px-4 font-guy text-black rounded-lg transition duration-300 hover:scale-110 tracking-wide plusfonts"
+    const cGoCheckContainer = "flex w-1/3 md:w-full justify-center"
+    const cGoCheck = "flex w-fit md:w-full h-fit my-1 py-2 px-4 items-center md:justify-center bg-indigo-700 text-zinc-100 font-guy rounded-lg transition duration-300 hover:scale-110 tracking-wide plusfonts "
+    const cTotalContainer = "w-1/3 md:w-full flex justify-end md:justify-center items-center text-3xl rounded mx-20 md:mx-0 my-1 py-2 px-4 pb-12 font-fredoka tracking-wide plusfonts text-celeste"
     const cTotalTitle = "font-guy pr-2"
     const cTotal = "text-black font-guy"
 
@@ -45,7 +46,8 @@ const Cart = () => {
                 cart.length === 0
                     ? (<div className={cEmptyCart}>{EmptyCart}</div>)
                     : cart.map(n => (
-                        <motion.div key={n.id}
+                        <motion.div className={cItemscontainer}
+                            key={n.id}
                             initial={{ scale: 5 }}
                             whileInView={{ scale: 1 }}
                             layout transition={spring}
@@ -76,8 +78,8 @@ const Cart = () => {
                 cart.length === 0
                     ? ''
                     : (
-                        <div className="flex">
-                            <div className="w-1/3">
+                        <div className="flex md:flex-col">
+                            <div className="w-1/3 md:w-full">
                                 <button onClick={emptyCart} className={cDelCart}>{DelCart}</button>
                             </div>
                             <div className={cGoCheckContainer}>

@@ -5,9 +5,9 @@ export const Success = ({ id }) => {
 
     // Tailwind CSS
     const cSuccessContainer = "flex flex-col h-screen justify-around pt-28 px-12 items-center bg-lime-300"
-    const cSuccessTitle = "font-fredoka text-8xl text-black plusfonts animate-bounce"
-    const cIdMessage = 'my-4 px-6 pt-2 pb-3 bg-black text-white text-2xl rounded-full z-10'
-    const cWave = 'absolute bottom-0 w-full bg-transparent'
+    const cSuccessTitle = "font-fredoka text-8xl md:text-6xl md:text-center text-black plusfonts animate-bounce"
+    const cIdMessage = 'my-4 px-6 pt-2 pb-3 bg-black text-white text-2xl md:text-xl md:text-center rounded-full z-10'
+    const cWave = 'absolute md:fixed bottom-0 w-full bg-transparent'
     const cBack = "py-2 px-4 bg-amarillo rounded font-bold hover:bg-black hover:text-amarillo transition duration-300 z-10"
 
     return (

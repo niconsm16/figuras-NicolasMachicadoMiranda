@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaPlusSquare, FaMinusSquare, FaRedoAlt, FaCartPlus } from "react-icons/fa";
-import { AddTitle, More, Product, RebootTitle, Unit, Units } from './ItemStrings';
+import { AddTitle, More, Product, RebootTitle, Unit, Units, Last } from './ItemStrings';
 
 const ItemCount = (props) => {
 
@@ -65,8 +65,16 @@ const ItemCount = (props) => {
     return (
         <div className={cContainer}>
             <div className={cStock}>{Product}
-                {showStock >= 0 ? showStock : '0'}
-                {showStock === 1 ? Unit : Units}
+                {showStock >= 0
+                    ? (realStock === 1
+                        ? Last
+                        : showStock)
+                    : '0'}
+                {showStock === 1
+                    ? Unit
+                    : (realStock === 1
+                        ? Unit
+                        : Units)}
                 {showStock > 0 ? More : ""}
             </div>
 

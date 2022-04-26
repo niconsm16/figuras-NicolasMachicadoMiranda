@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from 'react';
-// MOCK import { getItem, figures } from "../../../temp/Productos";
 import ItemList from './ItemList';
 import WaitItem from '../../WaitScenes/WaitList';
 import { useParams } from 'react-router-dom';

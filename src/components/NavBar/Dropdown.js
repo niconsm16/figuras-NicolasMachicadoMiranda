@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
-// MOCK import { getItem, logos } from '../temp/Productos'
 import { Link } from 'react-router-dom'
 import { collection, getDocs } from 'firebase/firestore'
 import { figuresdb } from '../../firebase/config'

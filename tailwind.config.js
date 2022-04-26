@@ -3,6 +3,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
+    screens: {
+      'md': [
+        { 'min': '400px', 'max': '980px' },
+      ],
+    },
     fontFamily: {
       'ptsans': ['Big Shoulders Display, cursive'],
       'bakbak': ['Bakbak One, cursive'],

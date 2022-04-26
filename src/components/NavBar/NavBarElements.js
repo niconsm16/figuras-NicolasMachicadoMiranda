@@ -44,7 +44,7 @@ export const MenuLI = styled.li``
 
 export const MenuA = styled.div`
 
-    width: auto;
+    
     cursor: pointer;
     justify-content: center;
     height: 100%;
