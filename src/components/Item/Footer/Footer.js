@@ -15,7 +15,7 @@ export const Footer = () => {
     const cTw = "cursor-pointer transition hover:text-[#1D9BF0]"
     const cNewsBox = "text-center w-2/4"
     const cInput = "md:my-2 w-48 px-2 text-black py-[0.05em] rounded"
-    const cSubscribe = "md:hidden px-2 py-0.5 mx-1 rounded bg-gradient-to-b from-zinc-700 to-zinc-800 hover:from-red-700 hover:to-red-900"
+    const cSubscribe = "px-2 py-0.5 mx-1 rounded bg-gradient-to-b from-zinc-700 to-zinc-800 hover:from-red-700 hover:to-red-900"
     const cHelp = "md:hidden pb-0.5 cursor-pointer transition hover:text-amarillo"
     const cPrivacy = "md:hidden cursor-pointer transition hover:text-amarillo"
 

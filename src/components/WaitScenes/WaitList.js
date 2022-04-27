@@ -7,7 +7,7 @@ const WaitItem = (() => {
 
     const cContainer = "flex flex-col justify-center items-center w-full h-full  opacity-0 animate-disappear"
     const cImg = "absolute h-full w-full top-0 object-cover"
-    const cText = "absolute md:relative top-[2em] text-5xl text-white text-shadow-fort font-guy m-6 z-10"
+    const cText = "absolute md:relative md:text-center top-[2em] text-5xl text-white text-shadow-fort font-guy m-6 z-10"
 
     // Render
 
