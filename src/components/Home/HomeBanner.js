@@ -54,7 +54,7 @@ const HomeBanner = () => {
 
     const cBannerContainer = `md:relative bg-black overflow-hidden z-0 bg-gradient-to-l before:absolute before:z-10 before:top-0 before:w-full before:h-[28rem] before:bg-gradient-to-r ${charged && ((count % 2) === 0 ? 'before:from-black before:to-transparent' : 'before:from-transparent before:to-black')} `
     const cBox = " flex mt-16 md:mt-4 bg-black h-96 w-full"
-    const cMotionLegend = `absolute flex h-[28rem] items-center top-[0] mx-12 z-30 w-1/3 ${(count % 2) === 0 ? 'left-0 text-left' : 'right-0 text-right'}`
+    const cMotionLegend = `absolute flex h-[28rem] items-center top-[0] mx-12 md:mr-24 z-30 w-1/3 ${(count % 2) === 0 ? 'left-0 text-left' : 'right-0 text-right'}`
     const cLegend = 'flex place-self-center grid text-white font-fredoka text-6xl md:text-4xl transition-opacity'
     const cImg = "w-full overflow-hidden object-cover h-96 blend"
 

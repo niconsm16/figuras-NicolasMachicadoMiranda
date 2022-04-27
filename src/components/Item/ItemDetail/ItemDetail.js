@@ -37,7 +37,7 @@ export const ItemDetail = ({ itemSelect }) => {
 
     // Tailwind Class
 
-    const cContainer = "absolute flex w-full h-fit top-0 pt-16 justify-center bg-zinc-100 md:relative"
+    const cContainer = "absolute flex w-full h-fit top-0 pt-16 md:pt-4 md: pb-4 justify-center bg-zinc-100 md:relative"
     const cBox = "flex w-11/12 md:flex-col h-fit min-h-screen justify-around px-6 py-8 justify-center bg-gradient-to-t from-zinc-200 to-zinc-100"
     const cBigImg = "flex flex-col items-center w-1/2 md:w-auto"
     const cThumbsContainer = "m-1 md:flex md:justify-center"
@@ -45,7 +45,7 @@ export const ItemDetail = ({ itemSelect }) => {
     const cDescBox = "flex flex-col font-book antialiased fonts items-end md:items-center w-1/4 md:w-auto justify-items-center text-right"
     const cLogo = "h-16 w-full mt-2 mb-6 md:my-8 object-contain justify-self-end"
     const cCategory = "font-fredoka pr-1 text-md bg-gradient-to-r from-transparent to-amarillo md:w-full md:text-center md:text-lg md:bg-red-500"
-    const cName = "font-racing pr-1 text-4xl my-1 md:text-8xl md:text-center"
+    const cName = "font-racing pr-1 text-4xl my-1 md:text-6xl md:text-center"
     const cPrice = "text-2xl pr-1 font-bakbak bg-gradient-to-r from-transparent to-violet-500 md:w-full md:bg-black md:text-white md:text-center "
     const cItemData = "flex text-[small] flex-col items-end my-2 md:items-center"
     const cItemDescription = "bg-zinc-100 rounded py-2 px-3 md:text-center"

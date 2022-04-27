@@ -278,7 +278,7 @@ const Checkout = () => {
     // Tailwind Css
 
     const cContainer = "flex flex-col min-h-screen max-h-full px-12 md:px-4 items-center"
-    const cTitle = "my-24 text-8xl md:text-6xl text-white font-guy plusfonts"
+    const cTitle = "my-24 md:my-8 text-8xl md:text-6xl text-white font-guy plusfonts"
     const cForm = "grid gap-2 grid-cols-4 w-full font-roboto p-12 md:px-4 mb-4 bg-neutral-100 text-black rounded-md shadow-xl"
     const cFields = "col-span-2 md:col-span-4 mx-4 md:mx-0"
     const cInput = `mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 
@@ -455,7 +455,7 @@ const Checkout = () => {
                     {/* Payment */}
                     <fieldset className={cFields}>
                         <div className="flex justify-between">
-                            <legend className="text-left">{PaymentData}</legend>
+                            <legend className="text-left md:w-full">{PaymentData}</legend>
                             <div className={cIconPayment}>
                                 {iconPayment()}
                             </div>
