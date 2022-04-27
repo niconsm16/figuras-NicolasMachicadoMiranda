@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     screens: {
       'md': [
-        { 'min': '400px', 'max': '980px' },
+        { 'min': '350px', 'max': '980px' },
       ],
     },
     fontFamily: {
