@@ -7,7 +7,7 @@ export const Footer = () => {
 
     // Tailwind Class
 
-    const cContainer = "flex md:h-auto md:py-4 relative items-center text-sm justify-around bottom-0 h-20 w-full font-book text-white antialiased fonts bg-black"
+    const cContainer = "flex md:flex-col md:h-auto md:py-4 relative items-center text-sm justify-around bottom-0 h-20 w-full font-book text-white antialiased fonts bg-black"
     const cSocial = "md:mb-2 flex pb-1 justify-around text-xl"
     const cWsp = "cursor-pointer transition hover:text-[#28D146]"
     const cIg = "cursor-pointer transition duration-500 rounded hover:text-black hover:bg-gradient-to-tr hover:from-[#FCAF45] hover:via-[#F77737] hover:via-[#FD1D1D] hover:via-[#833AB4] hover:to-[#405DE6] "
